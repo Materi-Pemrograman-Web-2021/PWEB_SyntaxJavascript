@@ -59,9 +59,79 @@ console.log(typeof(angka2))
 
 // output: number
 ```
+
+Pada tipe data ini juga bisa diterapkan perhitungan aritmatika seperti,
+| Operasi | Penjelasan |
+--- | --- |
+| + | Plus |
+| - | Minus |
+| / | Divide |
+| * | Multiply |
+| % | Mod |
+| `x`++ | Gunakan `x` dulu, baru tambah 1 |
+| ++`x` | tambah 1 dulu, baru gunakan `x` |
+
 ### 3. BigInt
+Pada JavaScript, tipe data “Number” hanya mencakup nilai dari -(253 - 1) hingga (253 - 1).
+
+Untuk nilai di luar Number, kita bisa menggunakan tipe BigInt. Untuk membedakan tipe BigInt dan Number, tambahkan karakter n di akhir angka.
+
+```js
+const bigNumber = 1234567890123456789012345678901234567890n;
+const Numbers = 1234567890123456789012345678901234567890;
+
+console.log(bigNumber);
+console.log(Numbers);
+
+/* output
+1234567890123456789012345678901234567890n
+1.2345678901234568e+39
+*/
+```
+
 ### 4. Strings
+Berupa teks
+
+```js
+let halo = "halo bang";
+```
+
 ### 5. Boolean
+Berupa true or false
+
+```js
+let x = true;
+let y = false;
+```
+
 ### 6. Null
+Tipe berikutnya adalah null. Serupa dengan undefined, namun null perlu diinisialisasikan pada variabel.
+
+```js
+let ini_null = null;
+```
 ### 7. Symbol
-### 8. 
+Symbol adalah tipe data baru yang dikenalkan pada ES6. Tipe data Symbol digunakan untuk menunjukkan identifier yang unik. Ketika membuat Symbol, kita bisa memberikan deskripsi atau nama symbol seperti ini:
+
+```js
+const id = Symbol("id");
+
+console.log(id);
+
+/* output
+Symbol(id)
+*/
+```
+
+Symbol disebut sebagai identifier yang unik karena meskipun kita membuat dua variabel symbol dengan nama atau deskripsi yang sama, kedua nilainya tetap dianggap berbeda. 
+
+```js
+const id1 = Symbol("id");
+const id2 = Symbol("id");
+
+console.log(id1 == id2);
+
+/* output
+false
+*/
+```
