@@ -28,8 +28,8 @@ let nama = "Prima";
 const angka = 100;
 console.log(angka);
 
-z = 200;
-console.log(z)
+angka = 200;
+console.log(angka)
 
 // TypeError: Assignment to constant variable
 ```
@@ -72,7 +72,7 @@ Pada tipe data ini juga bisa diterapkan perhitungan aritmatika seperti,
 | ++`x` | tambah 1 dulu, baru gunakan `x` |
 
 ### 3. BigInt
-Pada JavaScript, tipe data “Number” hanya mencakup nilai dari -(253 - 1) hingga (253 - 1).
+Pada JavaScript, tipe data “Number” hanya mencakup nilai dari -(2<sup>53</sup> - 1) hingga (2<sup>53</sup> - 1).
 
 Untuk nilai di luar Number, kita bisa menggunakan tipe BigInt. Untuk membedakan tipe BigInt dan Number, tambahkan karakter n di akhir angka.
 

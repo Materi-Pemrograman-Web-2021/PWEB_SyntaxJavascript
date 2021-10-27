@@ -153,10 +153,13 @@ Lexical scope berarti pada sebuah fungsi bersarang, fungsi yang berada di dalam 
 
 ```js
 function init() {
-    var name = 'Obi Wan';   // Variabel lokal di dalam scope fungsi init
+    // Variabel lokal di dalam scope fungsi init
+    var name = 'Obi Wan';   
     
-    function greet() {      // Inner function, merupakan contoh closure
-        console.log(`Halo, ${name}`);   // Memanggil variabel yang dideklarasikan di parent function
+    // Inner function, merupakan contoh closure
+    function greet() {      
+        // Memanggil variabel yang dideklarasikan di parent function
+        console.log(`Halo, ${name}`);   
     }
 
     greet();
